@@ -1,0 +1,55 @@
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args){
+
+
+        Scanner input = new Scanner(System.in);
+
+
+        System.out.println("Hoşgeldiniz! Lütfen İsim ve  Soyadınızı giriniz:");
+
+        String isim = input.nextLine();
+
+        System.out.println("Lütfen Quiz notunuzu giriniz:");
+
+        double quiz = input.nextDouble();
+
+        System.out.println("Lütfen Vize notunuzu giriniz:");
+
+        double vize = input.nextDouble();
+
+        System.out.println("Lütfen Final notunuzu giriniz:");
+
+        double finaln = input.nextDouble();
+
+
+        double notOrtalama = (quiz * 0.1) + (vize * 0.3) + (finaln * 0.6);
+
+        if (notOrtalama >= 85 ) {
+
+            System.out.println( "Sayın " + isim + " Not Ortalamanız:" + "AA");
+            System.out.println("Sınıfı geçtiniz");
+        }
+        else if (notOrtalama >= 70 ) {
+            System.out.println( "Sayın " + isim + " Not Ortalamanız:" + "BB");
+            System.out.println("Sınıfı geçtiniz");
+        }
+        else if (notOrtalama >=60 ) {
+            System.out.println( "Sayın " +isim+ " Not Ortalamanız:" + "CC");
+            System.out.println("Sınıfı geçtiniz");
+        }
+        else if (notOrtalama >=45) {
+            System.out.println( "Sayın " + isim + " Not Ortalamanız:" + "DD");
+            System.out.println("Sınıfı geçtiniz");
+        }
+        else {
+            System.out.println( "Sayın " + isim+ " Not Ortalamanız:" + "FF");
+            System.out.println("Sınıfta kaldınız");
+        }
+
+
+    }
+}
